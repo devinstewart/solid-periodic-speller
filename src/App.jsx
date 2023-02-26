@@ -7,11 +7,11 @@ const App = () => {
     const symbols = loadPeriodicTable();
     const [word, setWord] = createSignal('');
     const [noWordFound, setNoWordFound] = createSignal(false);
-    const [elements, setElements] = createStore([]);
+    const [elements, setElements] = createSignal([]);
 
     createEffect(() => {
         setNoWordFound(false);
-        setElements(reconcile(check(word(), symbols)));
+        setElements(check(word(), symbols));
         if (word() && elements.length === 0) {
             setNoWordFound(true);
         }
@@ -37,7 +37,7 @@ const App = () => {
                 <strong>-- couldn't spell it! --</strong>
             </Show>
             <div class='word-spelling'>
-                <For each={elements}>
+                <For each={elements()}>
                     {(element) => (
                         <div class='element'>
                             <div class='number'>{element.number}</div>
