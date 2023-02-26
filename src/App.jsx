@@ -11,7 +11,7 @@ const App = () => {
     createEffect(() => {
         setNoWordFound(false);
         setElements(check(word(), symbols));
-        if (word() && elements.length === 0) {
+        if (word() && elements().length === 0) {
             setNoWordFound(true);
         }
     });
