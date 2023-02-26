@@ -1,5 +1,4 @@
 import { createSignal, createEffect, For, Show } from 'solid-js';
-import { createStore, reconcile } from 'solid-js/store';
 import loadPeriodicTable from './utils/loadPeriodicTable.js';
 import check from './utils/check.js';
 
