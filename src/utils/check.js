@@ -6,8 +6,9 @@ import spellWord from './spellWord';
  * @param {{[key: string]:{name: string, number: number, symbol: string}}} symbols
  */
 const check = (inputWord, symbols) => {
-    const candidates = findCandidates(inputWord, symbols);
-    const elements = spellWord(candidates, inputWord);
+    const lowerCaseInputWord = inputWord.toLowerCase();
+    const candidates = findCandidates(lowerCaseInputWord, symbols);
+    const elements = spellWord(candidates, lowerCaseInputWord);
 
     const result = [];
     for (const element of elements) {
