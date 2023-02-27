@@ -1,7 +1,7 @@
 # Solid Periodic Speller
 My implementation of Periodic Table Speller App. From [Kyle Simpsons's](https://github.com/getify) workshop on [Thinking in Algorithms](https://frontendmasters.com/workshops/thinking-algorithms/).
 
-This implitation is using [SolidJS](https://www.solidjs.com/).
+This implementation is using [SolidJS](https://www.solidjs.com/).
 ## Installation
 ```bash
 npm install
