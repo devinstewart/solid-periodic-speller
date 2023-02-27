@@ -3,7 +3,7 @@ My implementation of Periodic Table Speller App. From [Kyle Simpsons's](https://
 
 This implementation is using [SolidJS](https://www.solidjs.com/).
 
-## Usage
+## Example
 Pick a word and see if it can be spelled using the elements of the periodic table.
 
 ![Example](example.png)
